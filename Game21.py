@@ -124,7 +124,7 @@ while True:
                 continue
             elif mode==4:
                 print(txt.center(110))
-                print("Your goal to get 21 points. Everytime you take card you get some points (you can get only 2 ,3, 4, 6, 7, 8, 9, 10 or 11) only by your luck. If you get more or less than 21 you lose.\n Good luck!")
+                print("Your goal to get 21 points. Everytime you take card you get some points (you can get only 2 ,3, 4, 6, 7, 8, 9, 10 or 11) only by your luck. If you get more or less than 21 you lose.\n Good Luck!")
             elif mode==5:
                 break
         except:
