@@ -7,6 +7,8 @@ p2_start=""
 draws=0
 r1=0
 r2=0
+b=0
+pvb=0
 
 txt="Игра «21»"
 print(txt.center(110))
@@ -36,9 +38,11 @@ while True:
                                 print("\nYou got",x,"points\nBot got",y,"points\n\nDraw!\nYour score:",P_score,"\nBot's score:",B_score,"\n")
                             elif P_score==21 or B_score>21:
                                 print("\nYou got",x,"points\nBot got",y,"points\n\nYou WON!\nYour score:",P_score,"\nBot's score:  ",B_score,"\n")
+                                pvb+=1
                                 break
                             elif B_score==21 or P_score>21:
                                 print("\nYou got",x,"points\nBot got",y,"points\n\nYou LOST!\nYour score:",P_score,"\nBot's score:",B_score,"\n")
+                                b+=1
                                 break
                             else:
                                 print("\nYou got",x,"points\nBot got",y,"points\n\nYour score:",P_score,"\nBot's score:",B_score)
@@ -120,7 +124,7 @@ while True:
                     except:
                         ValueError
             elif mode==3:
-                print("\nPlayer 1 wins:",r1,"\nPlayer 2 wins:",r2,"\nDraws:",draws,"\n")
+                print("\nBot wins:",b,"\nPlayer wins against bot:",pvb,"\nPlayer 1 wins:",r1,"\nPlayer 2 wins:",r2,"\nDraws:",draws)
                 continue
             elif mode==4:
                 print(txt.center(110))
