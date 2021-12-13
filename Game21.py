@@ -102,7 +102,7 @@ while True:
                             elif end=="n":
                                 continue
                         if p1>20 and p2>20:
-                            prit("\nP1's score",p1,"\nP2's score",p2,"\n\nDraw!")
+                            print("\nP1's score",p1,"\nP2's score",p2,"\n\nDraw!")
                             draws+=1
                             break
                         elif p1==21:
